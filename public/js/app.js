@@ -21,13 +21,6 @@ function showFirsComment() {
     $('.comments__wrapper').first().addClass('active');
 }
 
-function slideColorAfterDownloadPage() {
-
-    $('.item__content:after').css('max-width', '100%');
-    console.log($('.item__content:after'));
-}
-
-
 
 
 $(document).ready(function () {
@@ -38,9 +31,9 @@ $(document).ready(function () {
 
     showFirsComment();
 
-    // slideColorAfterDownloadPage();
-
-
+    $('.js-comment-btn').on('click', function callCommentForm() {
+        console.log('comment')
+    });
 
     $('.order-btn').on('click', function () {
         let item_id = $(this).data('item_id');
