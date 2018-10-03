@@ -32,7 +32,14 @@ $(document).ready(function () {
     showFirsComment();
 
     $('.js-comment-btn').on('click', function callCommentForm() {
-        console.log('comment')
+        $('.comments__wrapper.active').removeClass('active');
+        $('.comments__form').css('display', 'flex');
+
+    });
+
+    $('.js-comment__send').on('click', function sendCommentToDataBase(e) {
+        e.preventDefault()
+        console.log('click')
     });
 
     $('.order-btn').on('click', function () {

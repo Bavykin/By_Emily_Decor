@@ -456,10 +456,18 @@ textarea {
 
 .comments__form {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .comments__input {
-    width: calc(50% - 2px);
-    height: 40px;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #dfe5ed;
+}
+
+.comments__textarea {
+    height: 300px;
+    border: 1px solid #dfe5ed;
     padding: 20px;
 }

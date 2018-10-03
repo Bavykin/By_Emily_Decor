@@ -75,11 +75,12 @@
 
                 <?php } ?>
 
-                <form class="comments__form">
-                    <textarea name="comment" placeholder="Enter Your Message"></textarea>
+                <form class="comments__form" style="display: none">
+                    <textarea name="comment" placeholder="Enter Your Message" class="comments__textarea"></textarea>
                     <input type="text" name="name" placeholder="Enter Your Name" class="comments__input">
                     <input type="email" name="email" placeholder="Enter Your Email" class="comments__input">
-                    <input type="file" name="photo" class="comments__input">
+                    <button type="file" name="photo" class="comments__input animate__button">Attach photo</button>
+                    <button type="submit" class="comments__input animate__button js-comment__send">Send Comment</button>
 
                 </form>
 
